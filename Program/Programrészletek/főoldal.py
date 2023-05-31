@@ -1,0 +1,50 @@
+from tkinter import *
+foablak =Tk()
+foablak.config(bg="#eb942a")
+foablak.title('Raktárprogram')
+foablak.minsize(width =600,height=400)
+menusor =Frame(foablak)
+menusor.pack(side =TOP,fill =X)
+menu1 =Menubutton(menusor,text ='Geometria',underline =0)
+menu1.pack(side = LEFT )
+fajl =Menu(menu1)
+fajl.add_command(label ='Háromszög',underline =0)
+fajl.add_command(label ='Henger',underline =0)
+fajl.add_command(label ='Kocka',underline =0)
+fajl.add_command(label ='Kör',underline =0)
+fajl.add_command(label ='Négyzet',underline =0)
+fajl.add_command(label ='Pitagorasz',underline =0)
+menu1.config(menu =fajl)
+
+menusor2 =Frame(foablak)
+menusor2.pack(side =TOP,fill =X)
+menu2 =Menubutton(menusor2,text ='Matematika',underline =0)
+menu2.pack(side = LEFT )
+fajl2 =Menu(menu2)
+fajl2.add_command(label ='Háromszög',underline =0)
+fajl2.add_command(label ='Henger',underline =0)
+fajl2.add_command(label ='Kocka',underline =0)
+fajl2.add_command(label ='Kör',underline =0)
+fajl2.add_command(label ='Négyzet',underline =0)
+fajl2.add_command(label ='Pitagorasz',underline =0)
+menu1.config(menu =fajl2)
+
+menusor3 =Frame(foablak)
+menusor3.pack(side =TOP,fill =X)
+menu3 =Menubutton(menusor3,text ='Pénzügy',underline =0)
+menu3.pack(side = LEFT )
+fajl3 =Menu(menu3)
+fajl3.add_command(label ='Háromszög',underline =0)
+fajl3.add_command(label ='Henger',underline =0)
+fajl3.add_command(label ='Kocka',underline =0)
+fajl3.add_command(label ='Kör',underline =0)
+fajl3.add_command(label ='Négyzet',underline =0)
+fajl3.add_command(label ='Pitagorasz',underline =0)
+menu1.config(menu =fajl3)
+
+
+
+
+
+
+foablak.mainloop()
