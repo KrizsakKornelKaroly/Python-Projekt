@@ -36,6 +36,14 @@ menubar.add_cascade(label ='Kilépés', menu = file3, command= ablak.destroy)
 file3.add_separator()
 file3.add_command(label ='Kilépés', command = ablak.destroy)
 
+cim=Label(ablak,text="Üdvözöllek az Univerzális Kalkulátor \nAlkalmazásban!")
+cim.config(bg="#eb942a", fg="white",font="Arial 17", padx=10)
+cim.pack()
+
+kesz=Label(ablak,text="Az alkalmazást készítették: Krizsák Kornél, Péter Dávid, Pálinkás Andor")
+kesz.config(bg="#eb942a", fg="white",font="Arial 13", padx=10)
+kesz.pack(side=BOTTOM)
+
 
 
 
