@@ -51,6 +51,6 @@ masodfoku_szamitas_gomb.grid(row=3, columnspan=2, padx=10, pady=10)
 masodfoku_kilepes_gomb.grid(row=5, columnspan=1, padx=10, pady=10)
 
 masodfoku_image_label.grid(rowspan=5,row=0, column=2, padx=10, pady=10)
-masodfoku_ablak.minsize(600, 300)
-masodfoku_ablak.maxsize(600, 300)
+masodfoku_ablak.minsize(650, 300)
+masodfoku_ablak.maxsize(650, 300)
 masodfoku_ablak.mainloop()
