@@ -52,8 +52,8 @@ szamgenerator_kimenet_szov.config(LabelSettings)
 szamgenerator_kimenet.config(LabelSettings)
 
 # GRID
-szamgenerator_startszov.grid(column=1, row=2)
-szamgenerator_start.grid(column=2, row=2)
+szamgenerator_startszov.grid(column=1, row=2, pady=20)
+szamgenerator_start.grid(column=2, row=2,pady=20)
 szamgenerator_endszov.grid(column=1, row=3, pady=10)
 szamgenerator_end.grid(column=2, row=3, pady=10)
 szamgeneratorszamitas.grid(column=2, row=4)
