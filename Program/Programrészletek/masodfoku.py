@@ -5,18 +5,20 @@ masodfoku_ablak.config(bg="#df5a67")
 masodfoku_ablak.title("Másodfokú egyenlet kalkulátor")
 
 def masodfoku_szamitas():
-    a = float(masodfoku_a_entry.get())
-    b = float(masodfoku_b_entry.get())
-    c = float(masodfoku_c_entry.get())
+    try:
+        a = float(masodfoku_a_entry.get())
+        b = float(masodfoku_b_entry.get())
+        c = float(masodfoku_c_entry.get())
+        masodfoku_diszkriminans = b ** 2 - 4 * a * c
 
-    masodfoku_diszkriminans = b ** 2 - 4 * a * c
-
-    if masodfoku_diszkriminans < 0:
-        masodfoku_eredmeny_label.config(text="Hiba: Nincs valós megoldás!")
-    else:
-        masodfoku_x1 = (-b + (masodfoku_diszkriminans ** 0.5)) / (2 * a)
-        masodfoku_x2 = (-b - (masodfoku_diszkriminans ** 0.5)) / (2 * a)
-        masodfoku_eredmeny_label.config(text=f"X1={masodfoku_x1}\nX2={masodfoku_x2}")
+        if masodfoku_diszkriminans < 0:
+            masodfoku_eredmeny_label.config(text="Hiba: Nincs valós megoldás!")
+        else:
+            masodfoku_x1 = (-b + (masodfoku_diszkriminans ** 0.5)) / (2 * a)
+            masodfoku_x2 = (-b - (masodfoku_diszkriminans ** 0.5)) / (2 * a)
+            masodfoku_eredmeny_label.config(text=f"X1={masodfoku_x1}\nX2={masodfoku_x2}")
+    except:
+        masodfoku_eredmeny_label.config(text="Hiba: Érvénytelen bemenet!")
 
 masodfoku_a_label = Label(masodfoku_ablak, text="A:", bg="#df5a67", fg="white", font="Arial 15")
 masodfoku_b_label = Label(masodfoku_ablak, text="B:", bg="#df5a67", fg="white", font="Arial 15")
