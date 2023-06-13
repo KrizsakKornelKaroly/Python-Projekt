@@ -6,11 +6,15 @@ negyzetablak.config(bg="#6a92ef")
 negyzetablak.title("Négyzet kerülete és területe")
 
 def negyzet_szamitas():
-    oldalhossz = float(negyzetoldal.get())
-    kerulet = 4 * oldalhossz
-    terulet = oldalhossz ** 2
-    negyzetkerulet_kimenet.config(text=str(kerulet))
-    negyzetterulet_kimenet.config(text=str(terulet))
+    try:
+        oldalhossz = float(negyzetoldal.get())
+        kerulet = 4 * oldalhossz
+        terulet = oldalhossz ** 2
+        negyzetkerulet_kimenet.config(text=str(kerulet))
+        negyzetterulet_kimenet.config(text=str(terulet))
+    except ValueError:
+        negyzetkerulet_kimenet.config(text="Hibás adat!")
+        negyzetterulet_kimenet.config(text="Hibás adat!")
 
 negyzetoldal_szoveg = Label(negyzetablak, text="Oldalhossz: ", bg="#6a92ef", fg="white", font="Arial 15")
 negyzetoldal = Entry(negyzetablak, width=20, font="Arial 15", bg="#4162b0", fg="white")
