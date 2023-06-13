@@ -1,4 +1,5 @@
 from tkinter import *
+from PIL import Image, ImageTk
 
 negyzetablak = Tk()
 negyzetablak.config(bg="#6a92ef")
@@ -20,12 +21,17 @@ negyzetkerulet_kimenet = Label(negyzetablak, bg="#6a92ef", fg="white", font="Ari
 negyzetterulet_kimenet = Label(negyzetablak, bg="#6a92ef", fg="white", font="Arial 15")
 
 
-negyzetszamitas = Button(negyzetablak, text="Számítás", bg="#4162b0", fg="white", font="Arial 10", command=negyzet_szamitas)
-negyzetkimenetlep = Button(negyzetablak, text="Kilépés", command=negyzetablak.destroy, bg="#4162b0", fg="white", font="Arial 10")
+negyzetszamitas = Button(negyzetablak, text="Számítás", bg="#4162b0", fg="white", font="Arial 15", command=negyzet_szamitas)
+negyzetkimenetlep = Button(negyzetablak, text="Kilépés", command=negyzetablak.destroy, bg="#4162b0", fg="white", font="Arial 15")
 
+#photo
 
-negyzet_image = PhotoImage(file="Tervek\\Képek\\negyzet.png" ) 
-negyzet_image_label = Label(negyzetablak, image=negyzet_image)
+negyzetcanvas = Canvas(negyzetablak, width=202, height=203)
+negyzetcanvas.grid(column=3, row=3, rowspan=10, padx=10, pady=15)
+negyzetimage = Image.open("Tervek\\Képek\\negyzet.jpg")
+atmeret_negyzetimage = negyzetimage.resize((202,203))
+ujkep = ImageTk.PhotoImage(atmeret_negyzetimage)
+negyzetcanvas.create_image(1, 1, anchor=NW, image=ujkep)
 
 
 negyzet_filler1=Label(negyzetablak, bg="#6a92ef")
@@ -39,13 +45,12 @@ negyzetterulet_kimenet.grid(column=2, row=7)
 negyzetszamitas.grid(column=2, row=5)
 negyzetkimenetlep.grid(column=1, row=9)
 
-negyzet_image_label.grid(rowspan=5,row=5, column=3)
 
 LabelSettings = {"bg": "#6a92ef", "fg": "white", "font": ("Arial", 15)}
 negyzetkerulet_szoveg.config(LabelSettings)
 negyzetterulet_szoveg.config(LabelSettings)
 
-negyzetablak.minsize(600, 300)
-negyzetablak.maxsize(600, 300)
+negyzetablak.minsize(650, 300)
+negyzetablak.maxsize(650, 300)
 
 negyzetablak.mainloop()
