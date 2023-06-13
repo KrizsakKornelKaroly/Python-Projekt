@@ -54,7 +54,7 @@ atlagkimenet.config(LabelSettings)
 #KEP
 atlagcanvas = Canvas(atlagablak, width=250, height=250)
 atlagcanvas.grid(column=3, row=2, rowspan=10, padx=50, pady=20)
-atlagimage = (Image.open("Program\\Programrészletek\\Képek\\atlagszamitas.jpg"))
+atlagimage = (Image.open("Program\\Összerakás\\Képek\\atlagszamitas.jpg"))
 atmeret_atlagimage = atlagimage.resize((250,250))
 ujkep = ImageTk.PhotoImage(atmeret_atlagimage)
 atlagcanvas.create_image(1,1,anchor=NW, image=ujkep)

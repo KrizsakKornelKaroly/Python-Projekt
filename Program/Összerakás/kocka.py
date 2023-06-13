@@ -32,7 +32,7 @@ kockakimenetlep = Button(kockaablak, text="Kilépés", command=kockaablak.destro
 #photo
 kockacanvas = Canvas(kockaablak, width=250, height=250)
 kockacanvas.grid(column=3, row=1, rowspan=10, padx=20, pady=20)
-kockaimage = Image.open("Program\\Programrészletek\\Képek\\kocka.jpg")
+kockaimage = Image.open("Program\\Összerakás\\Képek\\kocka.jpg")
 atmeret_kockaimage = kockaimage.resize((250,250))
 ujkep = ImageTk.PhotoImage(atmeret_kockaimage)
 kockacanvas.create_image(1, 1, anchor=NW, image=ujkep)

@@ -39,7 +39,7 @@ szamgeneratorkilep = Button(szamgeneratorablak, text="Kilépés", command=szamge
 # KÉP
 szamgeneratorcanvas = Canvas(szamgeneratorablak, width=260, height=160)
 szamgeneratorcanvas.grid(column=3, row=3, rowspan=10, padx=10, pady=15)
-szamgeneratorimage = Image.open("Program\\Programrészletek\\Képek\\szamgenerator.jpg")
+szamgeneratorimage = Image.open("Program\\Összerakás\\Képek\\szamgenerator.jpg")
 atmeret_szamgeneratorimage = szamgeneratorimage.resize((260,160))
 ujkep = ImageTk.PhotoImage(atmeret_szamgeneratorimage)
 szamgeneratorcanvas.create_image(1, 1, anchor=NW, image=ujkep)

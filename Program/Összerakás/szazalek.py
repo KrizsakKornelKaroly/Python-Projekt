@@ -32,7 +32,7 @@ szazalekkilep = Button(szazalekablak, text="Kilépés", command=szazalekablak.de
 #KEP
 szazalekcanvas = Canvas(szazalekablak, width=250, height=250)
 szazalekcanvas.grid(column=3, row=2, rowspan=10, padx=10, pady=15)
-szazalekimage = (Image.open("Program\\Programrészletek\\Képek\\szazalekszamitas.jpg"))
+szazalekimage = (Image.open("Program\\Összerakás\\Képek\\szazalekszamitas.jpg"))
 atmeret_szazalekimage = szazalekimage.resize((250,250))
 ujkep = ImageTk.PhotoImage(atmeret_szazalekimage)
 szazalekcanvas.create_image(1,1,anchor=NW, image=ujkep)

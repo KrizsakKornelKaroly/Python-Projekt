@@ -37,7 +37,7 @@ hengerkilep = Button(hengerablak, text="Kilépés", command=hengerablak.destroy,
 #KEP
 hengercanvas = Canvas(hengerablak, width=250, height=250)
 hengercanvas.grid(column=3, row=2, rowspan=10, padx=25, pady=15)
-hengerimage = (Image.open("Program\\Programrészletek\\Képek\\henger.jpg"))
+hengerimage = (Image.open("Program\\Összerakás\\Képek\\henger.jpg"))
 atmeret_hengerimage = hengerimage.resize((250,250))
 ujkep = ImageTk.PhotoImage(atmeret_hengerimage)
 hengercanvas.create_image(1,1,anchor=NW, image=ujkep)

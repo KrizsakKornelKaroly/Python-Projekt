@@ -32,7 +32,7 @@ negyzetkimenetlep = Button(negyzetablak, text="Kilépés", command=negyzetablak.
 
 negyzetcanvas = Canvas(negyzetablak, width=250, height=250)
 negyzetcanvas.grid(column=3, row=1, rowspan=10, padx=15, pady=20)
-negyzetimage = Image.open("Program\\Programrészletek\\Képek\\negyzet.jpg")
+negyzetimage = Image.open("Program\\Összerakás\\Képek\\negyzet.jpg")
 atmeret_negyzetimage = negyzetimage.resize((250,250))
 ujkep = ImageTk.PhotoImage(atmeret_negyzetimage)
 negyzetcanvas.create_image(1, 1, anchor=NW, image=ujkep)

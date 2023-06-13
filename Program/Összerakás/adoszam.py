@@ -132,7 +132,7 @@ adokilep = Button(adoablak, text="Kilépés", command=adoablak.destroy, bg="#359
 #KEP
 adocanvas = Canvas(adoablak, width=250, height=250)
 adocanvas.grid(column=3, row=2, rowspan=10, padx=50, pady=20)
-adoimage = (Image.open("Program\\Programrészletek\\Képek\\ado.jpg"))
+adoimage = (Image.open("Program\\Összerakás\\Képek\\ado.jpg"))
 atmeret_adoimage = adoimage.resize((250,250))
 ujkep = ImageTk.PhotoImage(atmeret_adoimage)
 adocanvas.create_image(1,1,anchor=NW, image=ujkep)

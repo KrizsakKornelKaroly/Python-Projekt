@@ -31,7 +31,7 @@ masodfoku_eredmeny_label = Label(masodfoku_ablak, bg="#df5a67", fg="white", font
 masodfoku_szamitas_gomb = Button(masodfoku_ablak, text="Számítás", bg="#ad3e49", fg="white", font="Arial 10", command=masodfoku_szamitas)
 masodfoku_kilepes_gomb = Button(masodfoku_ablak, text="Kilépés", command=masodfoku_ablak.destroy, bg="#ad3e49", fg="white", font="Arial 10")
 
-masodfoku_image = PhotoImage(file="Program\\Programrészletek\\Képek\\masodfoku.png" ) 
+masodfoku_image = PhotoImage(file="Program\\Összerakás\\Képek\\masodfoku.png" ) 
 masodfoku_image_label = Label(masodfoku_ablak, image=masodfoku_image)
 
 masodfoku_a_label.grid(row=0, column=0,columnspan=2)

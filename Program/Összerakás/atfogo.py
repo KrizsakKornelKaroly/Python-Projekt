@@ -31,7 +31,7 @@ atfogokilep = Button(atfogoablak, text="Kilépés", command=atfogoablak.destroy,
 #KEP
 atfogocanvas = Canvas(atfogoablak, width=250, height=250)
 atfogocanvas.grid(column=3, row=2, rowspan=10, padx=25, pady=15)
-atfogoimage = (Image.open("Program\\Programrészletek\\Képek\\pitagorasz.png"))
+atfogoimage = (Image.open("Program\\Összerakás\\Képek\\pitagorasz.png"))
 atmeret_atfogoimage = atfogoimage.resize((250,250))
 ujkep = ImageTk.PhotoImage(atmeret_atfogoimage)
 atfogocanvas.create_image(1,1,anchor=NW, image=ujkep)
